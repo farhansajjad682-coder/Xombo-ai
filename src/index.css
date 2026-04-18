@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f8f9fa] text-[#111827] antialiased;
+  }
+}
+
+.markdown-body {
+  @apply text-[15px] leading-[1.6] text-[#374151];
+}
+
+.markdown-body p {
+  @apply mb-4 last:mb-0;
+}
+
+.markdown-body pre {
+  @apply bg-[#000000] rounded-xl my-4 overflow-hidden border border-zinc-800 shadow-lg relative;
+}
+
+.code-header {
+  @apply bg-zinc-900 text-zinc-400 text-[10px] font-black uppercase tracking-widest px-4 py-2 border-b border-zinc-800 flex justify-between items-center;
+}
+
+.markdown-body pre code {
+  @apply block p-4 text-[#d4d4d4] text-[14px] leading-relaxed overflow-x-auto;
+}
+
+.markdown-body code:not(pre code) {
+  @apply font-mono bg-zinc-200 px-1.5 py-0.5 rounded text-zinc-800 text-[13px];
+}
+
+.user-avatar { @apply bg-[#10b981] text-white rounded; }
+.ai-avatar { @apply bg-[#2563eb] text-white rounded; }
+.system-avatar { @apply bg-[#6b7280] text-white rounded; }
+
+.history-item-active {
+  @apply bg-[#eff6ff] text-[#2563eb] font-medium;
+}
+
+.input-box-shadow {
+  @apply shadow-[0_4px_6px_-1px_rgba(0,0,0,0.05)];
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #d1d5db;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Xombo AI",
+  "description": "An advanced AI chat application featuring persistent conversation history, image analysis, and intelligent function calling capabilities powered by Xombo AI (Gemini).",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
